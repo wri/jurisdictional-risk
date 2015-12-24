@@ -8,7 +8,7 @@ def (district_illegal_concession_mof):
 
 	"""step 2: Add a “area_hectare” field, calculate area of each intersection by query:
 
-	sql = """u
+	sql = """
 			update district_illegal_
 			set area_hectare =
 			st_area(the_geom::geography)/10000"""
